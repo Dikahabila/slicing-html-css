@@ -85,14 +85,15 @@ nav{
 
 
 .kotak-kosong {
-    width: 580px;
-    height: 350px;
+    width: 450px;
+    height: 300px;
     background-color: #C4DEFD;
     margin-right: 50px;
-
+    transform: translateY(25px);
     position: relative;
-    top: 30px; 
+    top: 30px;
 }
+
 .content-manajement {
    margin-left: 100px;
    margin-top: 20px;
@@ -118,14 +119,24 @@ nav{
     margin-top: 200px;
     padding-bottom: 50px;
 }
-.kotak-kosong2{ 
-    width: 540px;
+
+.manajement-container{
+    width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+.kotak-kosong2 {
+    width: 450px;
     height: 350px;
     background-color: #C4DEFD;
     margin-right: 50px;
-
+    transform: translateY(25px);
     position: relative;
-    top: 30px; 
+    flex-shrink: 0;
+    top: 30px;
 }
 .content-project {
    margin-left: 100px;
@@ -173,20 +184,31 @@ nav{
 }
 
 /* work together */
-.content-work-together {
-   margin-left: 120px;
-    color: white;
-    margin-top: 100px;
+
+.work{
+    background-color: #ffffff;
+}
+.content-work-together{
+    flex: 1;
+    color: #212529;
+}
+
+.work-container{
+    width: 1200px;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
 }
 
 .content-work-together h1 {
    font-size: 45px;
     color: rgb(0, 0, 0);
-    margin-left: 100px;
+    
 }
 
 .content-work-together p{
-    margin-left: 100px;
 
     color: rgb(0, 0, 0);
 }
@@ -198,54 +220,53 @@ nav{
     color: #ffffff;
     font-size: 14px;
     cursor: pointer;
-    font-family: "Inter", sans-serif;
-     margin-left: 100px;
-
+    font-family: "Inter", sans-serif; 
     
 }
 
+.foto{
+    flex: 1;
+}
+
 .foto img{
-     width: 95%;
-    height: 95%;
-    margin-top: 50px;
-    margin-left: 90px;
-
+    width: 100%;
+    max-width: 550px;
+    height: auto;
 }
-.content-work-together h1{
-    position: relative;
-    display: inline-block;
-    font-size: 45px;
-    color: black;
-    z-index: 1;
-}
-
 
 .underline2{
-    position: absolute;
-    left: 130px;
-    bottom: 5px;
-   width: 280px;   
-    height: auto;   
-    transform: translateY(6px);
-    z-index: -1;
+  position: a;
+    left:120px;
+    bottom:4px;
+    width:250px;
+    z-index:-1;
 }
 
 /* Extension */
-.kotak-kosong {
-    width: 540px;
-    height: 340px;
+.kotak-kosong3 {
+    width: 450px;
+    height: 300px;
     background-color: #C4DEFD;
     margin-right: 50px;
-
+    transform: translateY(25px);
     position: relative;
     top: 30px;
 }
-.content-extension {
-   margin-left: 100px;
-   margin-top: 20px;
-    color: white;
-}
 
+.extension-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.content-extension{
+    width: 500px;
+    color: white;
+    margin-left: 60px;
+    transform: translateY(25px);
+}
 .content-extension h1{
     position: relative;
     display: inline-block;
@@ -274,19 +295,28 @@ nav{
     
 }
 
+.customise-container{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
 .kotak-kosong {
     width: 540px;
     height: 340px;
     background-color: #C4DEFD;
     margin-left: 50px;
-
+    flex-shrink: 0;
     position: relative;
     top: 30px; 
 }
 .content-customise {
-   margin-left: 100px;
-   margin-top: 20px;
-    color: rgb(0, 0, 0);
+    margin-left: -50px;
+    transform: translateY(30px);
+    color: #000;
 }
 
 .content-customise h1{
@@ -324,6 +354,11 @@ nav{
     padding-top: 100px;
 }
 
+.container-choose{
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .content-choose {
    
    margin-top: 20px;
@@ -346,7 +381,7 @@ nav{
 }
 .underline5{
     position: absolute;
-    right: 310px;
+    right: 260px;
     bottom: 5px;
    width: 350px;   
     height: auto;   
@@ -356,32 +391,32 @@ nav{
 
 /* card */
 .card-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
 
 .card-free{
     border: 1px solid #FFE492;
-    margin: 20px;
     padding: 20px;
     width: 300px;
     border-radius: 10px;
-    margin-left: 100px;
 
+    margin: 0;
 }
 .card-personal{
-   border: none;
+    border: none;
     background-color: #043873;
-    margin: 20px;
     padding: 20px;
     width: 300px;
     height: 550px;
     border-radius: 10px;
-    margin-left: 10px;
-}
 
+    margin: 0;
+}
 .card-personal h1{
     color: #ffffff;
 }
@@ -397,14 +432,12 @@ nav{
 
 .card-organization{
     border: 1px solid #FFE492;
-    margin: 20px;
     padding: 20px;
     width: 300px;
     border-radius: 10px;
-    margin-right: 100px;
 
+    margin: 0;
 }
-
 .choose .container{
     display: block;
 }
@@ -436,6 +469,10 @@ nav{
     margin-bottom: 30px;
     position: relative;
    
+}
+
+.work-container{
+    justify-content: center;
 }
 .content-you-work {
    margin-top: -100px;
@@ -473,27 +510,30 @@ nav{
 
 /* Your Data*/
 .content-your-data {
-   margin-left: 100px;
-   margin-top: 20px;
+    flex: 1;
+    margin-left: 100px;
     color: white;
 }
 
-.your-data .container{
+.your-container{
+    width: 1200px;
+    margin: 100px auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    flex-direction: row-reverse;
+    align-items: center;
     gap: 80px;
 }
 
+
 .foto2{
-    position: relative;
-    left: -80px;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
+
 .foto2 img{
-    height: auto;
     width: 500px;
-    transform: t;
+    height: auto;
 }
 
 .content-your-data h1{
@@ -531,6 +571,11 @@ nav{
 /* sponsor */
 .sponsor{
     padding-top: 100px;
+}
+
+.sponsor-container{
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
 .content-sponsor {
@@ -579,18 +624,17 @@ nav{
      padding: 80px 0;
 }
 
-.favorite-apps .container{
+.container-favorite{
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     gap: 80px;
 }
 
-
 .content-favorite-apps {
     color: white;
-    position: relative;
-    top: -20px;
 }
 
 .content-favorite-apps h1 {
@@ -612,8 +656,6 @@ nav{
     font-size: 14px;
     cursor: pointer;
     font-family: "Inter", sans-serif;
-     
-
     
 }
 
