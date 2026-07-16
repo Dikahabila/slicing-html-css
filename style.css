@@ -686,6 +686,7 @@ nav{
 
 .card1 hr{
     margin: 30px 0;
+    border: 1px solid #000000;
 }
 
 .profile1{
@@ -723,11 +724,12 @@ nav{
 
 .card2 p{
     line-height: 1.8;
+
 }
 
 .card2 hr{
     margin: 30px 0;
-    border: 1px solid rgba(255,255,255,.5);
+    border: 1px solid #ffffff;
 }
 
 .profile2{
@@ -744,7 +746,7 @@ nav{
 
 .info2 h3{
     margin: 0;
-    color: white;
+    color: #043873;
 }
 
 .info2 span{
@@ -771,7 +773,7 @@ nav{
 
 .card3 hr{
     margin: 30px 0;
-    border: 1px solid rgba(255,255,255,.5);
+    border: 1px solid #ffffff;
 }
 
 .profile3{
@@ -788,7 +790,7 @@ nav{
 
 .info3 h3{
     margin: 0;
-    color: white;
+    color: #043873;
 }
 
 .info3 span{
@@ -869,17 +871,40 @@ nav{
 
 .menu-footer{
     background-color: #043873;
-    padding: 70px 80px 30px;
+    padding: 70px 0 30px;
     
+}
+
+
+
+.footer-container{
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .menu-footer .container{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 50px;
+    gap: 60px;
 }
 .menu-whitepace{
+    width: 260px;
+}
+
+.product,
+.resources,
+.company{
+    width: 150px;
+}
+
+.try-it-today{
     width: 280px;
 }
 
@@ -901,7 +926,8 @@ nav{
     line-height: 1.8;
 }
 .footer-bottom{
-    margin-top: 60px;
+    max-width: 1200px;
+    margin: 60px auto 0;
     padding-top: 25px;
     border-top: 1px solid rgba(255,255,255,.3);
 
