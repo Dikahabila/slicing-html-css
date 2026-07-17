@@ -83,6 +83,11 @@ nav{
     padding: 20px;
 }
 
+.content-manajement {
+   margin-left: 100px;
+   margin-top: 20px;
+    color: white;
+}
 
 .kotak-kosong {
     width: 450px;
@@ -94,11 +99,7 @@ nav{
     top: 30px;
 }
 
-.content-manajement {
-   margin-left: 100px;
-   margin-top: 20px;
-    color: white;
-}
+
 
 .hero {
     background-image: url("gambar/Element.svg");
@@ -154,6 +155,7 @@ nav{
 .content-project h1{
     position: relative;
     display: inline-block;
+    top: 30px;
     font-size: 45px;
     color: black;
     z-index: 1;
@@ -168,11 +170,15 @@ nav{
     z-index: -1;
 }
 .content-project p{
-   
+   position: relative;
+   top: 30px;
+   margin: 0;
     color: rgb(0, 0, 0);
 }
 .btn-get{
     background-color: #4F9CF9;
+    position: relative;
+    top: 30px;
     padding: 15px 25px;
     border: none;
     border-radius: 5px;
@@ -202,10 +208,12 @@ nav{
     gap: 70px;
 }
 
-.content-work-together h1 {
-   font-size: 45px;
-    color: rgb(0, 0, 0);
-    
+.content-work-together h1{
+    position: relative;
+    display: inline-block;
+    font-size: 45px;
+    color: #000;
+    z-index: 1; 
 }
 
 .content-work-together p{
@@ -235,14 +243,22 @@ nav{
 }
 
 .underline2{
-  position: a;
-    left:120px;
-    bottom:4px;
-    width:250px;
-    z-index:-1;
+    position: absolute;
+    left: 130px;
+    bottom: 5px;
+   width: 300px;   
+    height: auto;   
+    transform: translateY(6px);
+    z-index: -1;
 }
 
 /* Extension */
+
+.use-extension{
+    background-color: #043873;
+    padding-top: 30px;
+    padding-bottom: 120px;
+}
 .kotak-kosong3 {
     width: 450px;
     height: 300px;
@@ -288,9 +304,9 @@ nav{
 
 .customise{
     background-color: #ffffff;
-    margin-top: 100px;
-    padding-bottom: 50px;
-    padding-top: 40px;
+    margin-top: 60px;
+    padding-bottom: 180px;
+   
     
     
 }
@@ -351,7 +367,7 @@ nav{
 /* choose your plan*/
 
 .choose{
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 .container-choose{
