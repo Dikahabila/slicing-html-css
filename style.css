@@ -11,27 +11,28 @@ body{
 }
 
 .logo{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-    
+    display:flex;
+    align-items:center;
+    gap:10px;
 }
 
 .logo img{
-   position: relative;
-   left: 45px;
+    position:static;
 }
 
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 70px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.navbar-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
 .menu{
-    margin-left: 200px;
+    margin-left: 0;
 }
 
 .menu ul {
@@ -52,6 +53,7 @@ nav{
 
 .btn{
     display: flex;
+    position: static;
     gap: 20px;
   
 }
@@ -65,7 +67,20 @@ nav{
     font-size: 14px;
     cursor: pointer;
 }
-.btn-twf{
+.btn-twf1{
+    background-color: #4F9CF992;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    
+}
+.btn-twf2{
+    position: relative;
+    right: 40px;
     background-color: #4F9CF992;
     padding: 15px 25px;
     border: none;
@@ -77,29 +92,33 @@ nav{
     
 }
 
-.container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 20px;
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .content-manajement {
-   margin-left: 100px;
+    position: relative;
+   margin-left: 50px;
    margin-top: 20px;
     color: white;
 }
 
-.kotak-kosong {
-    width: 450px;
-    height: 300px;
-    background-color: #C4DEFD;
-    margin-right: 50px;
-    transform: translateY(25px);
-    position: relative;
-    top: 30px;
+.hero-image{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
-
+.hero-image img{
+    width: 100%;
+    max-width: 520px;
+    border: 1px solid #FFFFFF;
+    height: auto;
+    transform: translateY(25px);
+}
 
 .hero {
     background-image: url("gambar/Element.svg");
@@ -108,8 +127,23 @@ nav{
     background-size: contain; 
     
 }
+
+.hero-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px;
+}
 .content-manajement h1 {
+    position: relative;
+    right: 40px;
    font-size: 45px;
+    color: white;
+}
+.content-manajement p {
+    position: relative;
+    right: 40px;
+
     color: white;
 }
 
@@ -122,8 +156,6 @@ nav{
 }
 
 .manajement-container{
-    width: 1200px;
-    margin: 100px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -133,16 +165,29 @@ nav{
     width: 450px;
     height: 350px;
     background-color: #C4DEFD;
-    margin-right: 50px;
+    right: -2px;
     transform: translateY(25px);
     position: relative;
     flex-shrink: 0;
     top: 30px;
 }
 .content-project {
-   margin-left: 100px;
    margin-top: 20px;
     color: white;
+    flex: 1;
+}
+.hero2-image{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero2-image img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding-top: 70px;
+    display: block;
 }
 
 .oval{
@@ -189,10 +234,13 @@ nav{
     
 }
 
+
 /* work together */
 
 .work{
     background-color: #ffffff;
+    padding-top: 70px;
+    padding-bottom: 50px;
 }
 .content-work-together{
     flex: 1;
@@ -200,8 +248,6 @@ nav{
 }
 
 .work-container{
-    width: 1200px;
-    margin: 100px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -237,6 +283,8 @@ nav{
 }
 
 .foto img{
+    position: relative;
+    right: 50px;
     width: 100%;
     max-width: 550px;
     height: auto;
@@ -263,15 +311,13 @@ nav{
     width: 450px;
     height: 300px;
     background-color: #C4DEFD;
-    margin-right: 50px;
+    margin-right: 70px;
     transform: translateY(25px);
     position: relative;
     top: 30px;
 }
 
 .extension-container{
-    width: 1200px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -280,7 +326,7 @@ nav{
 .content-extension{
     width: 500px;
     color: white;
-    margin-left: 60px;
+    margin-right: 90px;
     transform: translateY(25px);
 }
 .content-extension h1{
@@ -294,45 +340,54 @@ nav{
     position: absolute;
     left: 160px;
     bottom: 5px;
-   width: 300px;   
+    width: 300px;   
     height: auto;   
     transform: translateY(4px);
     z-index: -1;
 }
 
+.btn-lets-go{
+    position: relative;
+    right: -5px;
+    background-color: #4F9CF992;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    
+}
 /* Customise */
 
 .customise{
     background-color: #ffffff;
     margin-top: 60px;
-    padding-bottom: 180px;
-   
-    
+    padding-bottom: 50px;  
     
 }
 
 .customise-container{
-    width: 1200px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 80px;
 }
 
-.kotak-kosong {
-    width: 540px;
-    height: 340px;
-    background-color: #C4DEFD;
-    margin-left: 50px;
-    flex-shrink: 0;
-    position: relative;
-    top: 30px; 
+.heroo-image{
+    flex: 1;
 }
-.content-customise {
-    margin-left: -50px;
-    transform: translateY(30px);
-    color: #000;
+
+.heroo-image img{
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    display: block;
+}
+
+.content-customise{
+    flex: 1;
 }
 
 .content-customise h1{
@@ -368,15 +423,14 @@ nav{
 
 .choose{
     padding-top: 150px;
+    background-color: #ffffff;
 }
 
 .container-choose{
-    width: 1200px;
-    margin: 0 auto;
+    
 }
 
 .content-choose {
-   
    margin-top: 20px;
     color: rgb(0, 0, 0);
 }
@@ -410,7 +464,7 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 35px;
+    gap: 85px;
     margin-top: 50px;
     padding-bottom: 50px;
 }
@@ -481,14 +535,15 @@ nav{
 /* you work, everywhere you are */
 .you-work{
     background-color: #043873;
-    margin-top: 50px;
-    margin-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
     position: relative;
    
 }
 
 .work-container{
     justify-content: center;
+    padding-top: 50px;
 }
 .content-you-work {
    margin-top: -100px;
@@ -512,7 +567,7 @@ nav{
     background-repeat: no-repeat;
   background-position: left -150px;
     background-size: 350px;
-    padding: 120px 0;
+    padding: 20px 0;
 }
 .underline6{
     position: absolute;
@@ -526,14 +581,17 @@ nav{
 
 /* Your Data*/
 .content-your-data {
+    margin-right: 20px;
     flex: 1;
-    margin-left: 100px;
     color: white;
 }
 
+.your-data{
+    background-color: #ffffff;
+    padding-top: 50px;
+}
+
 .your-container{
-    width: 1200px;
-    margin: 100px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -587,6 +645,7 @@ nav{
 /* sponsor */
 .sponsor{
     padding-top: 100px;
+    background-color: #ffffff;
 }
 
 .sponsor-container{
@@ -594,43 +653,42 @@ nav{
     margin-bottom: 50px;
 }
 
-.content-sponsor {
-   
-   margin-top: 20px;
-    color: rgb(0, 0, 0);
+.content-sponsor{
+    text-align: center;
 }
 
 .content-sponsor h1{
     position: relative;
-    display: block;
-    text-align: center;
+    display: inline-block;
     font-size: 45px;
-    color: rgb(0, 0, 0);
+    color: #000;
     z-index: 1;
 }
 
 .underline8{
     position: absolute;
-    left: 600px;
-    bottom: 5px;
-   width: 280px;   
-    height: auto;   
-    transform: translateY(6px);
+    left: 100px;
+    bottom: -8px;
+    width: 280px;
+    height: auto;
     z-index: -1;
 }
 
+
+
 .sponsor-container{
     display: flex;
-   justify-content: space-evenly;
-   align-items: center;
-   flex-wrap: wrap;
-   gap: 40px;
-   padding: 50px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;
+    width: 100%;
+    gap: 100px;
 }
 
 .sponsor-container img{
-    height: 50px;
+    display: block;
     width: auto;
+    height: 50px;
     object-fit: contain;
 }
 
@@ -641,8 +699,6 @@ nav{
 }
 
 .container-favorite{
-    width: 1200px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -693,7 +749,9 @@ nav{
 /* client */
 .client{
     padding-top: 50px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    background-color: #ffffff;
+
 }
 .content-client{
     text-align: center;
@@ -702,7 +760,7 @@ nav{
 
 .content-client h1{
     position: relative;
-    display: block;
+    display: inline-block;
     text-align: center;
     font-size: 45px;
     color: rgb(0, 0, 0);
@@ -711,11 +769,10 @@ nav{
 
 .underline10{
     position: absolute;
-    right: 330px;
-    bottom: 5px;
-   width: 200px;   
-    height: auto;   
-    transform: translateY(-10px);
+    left: 380px;
+    bottom: 20px;
+    width: 200px;
+    height: auto;
     z-index: -1;
 }
 
@@ -1021,3 +1078,4 @@ nav{
     height: 20px;
     object-fit: contain;
 }
+
