@@ -79,7 +79,7 @@ nav{
     
 }
 .btn-twf2{
-    position: relative;
+    position: static;
     right: 40px;
     background-color: #4F9CF992;
     padding: 15px 25px;
@@ -99,11 +99,9 @@ nav{
     padding: 0 20px;
 }
 
-.content-manajement {
-    position: relative;
-   margin-left: 50px;
-   margin-top: 20px;
+.content-manajement{
     color: white;
+    margin: 0;
 }
 
 .hero-image{
@@ -120,12 +118,11 @@ nav{
     transform: translateY(25px);
 }
 
-.hero {
+.hero{
     background-image: url("gambar/Element.svg");
     background-repeat: no-repeat;
-    background-position: center 50px;
-    background-size: contain; 
-    
+    background-position: center 120px;
+    background-size: cover;
 }
 
 .hero-container{
@@ -134,17 +131,16 @@ nav{
     align-items: center;
     gap: 70px;
 }
-.content-manajement h1 {
-    position: relative;
-    right: 40px;
-   font-size: 45px;
-    color: white;
+.content-manajement h1{
+    font-size: 64px;
+    line-height: 1.15;
+    margin-bottom: 24px;
 }
-.content-manajement p {
-    position: relative;
-    right: 40px;
 
-    color: white;
+.content-manajement p{
+    max-width: 470px;
+    line-height: 30px;
+    margin-bottom: 32px;
 }
 
 /* management */
@@ -161,16 +157,7 @@ nav{
     align-items: center;
     gap: 70px;
 }
-.kotak-kosong2 {
-    width: 450px;
-    height: 350px;
-    background-color: #C4DEFD;
-    right: -2px;
-    transform: translateY(25px);
-    position: relative;
-    flex-shrink: 0;
-    top: 30px;
-}
+
 .content-project {
    margin-top: 20px;
     color: white;
@@ -674,15 +661,13 @@ nav{
     z-index: -1;
 }
 
-
-
 .sponsor-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 60px 0;
     width: 100%;
-    gap: 100px;
+    gap: 10px;
 }
 
 .sponsor-container img{
@@ -999,8 +984,7 @@ nav{
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
-    width: 1200px;
-    margin: 0 auto;
+    
 }
 
 .menu-footer .container{
@@ -1079,3 +1063,114 @@ nav{
     object-fit: contain;
 }
 
+
+/* Desktop 1440px */
+@media screen and (max-width: 1440px) {
+
+    .hero{
+        padding: 60px 0 100px;
+        background-position: center 170px;
+        background-size: cover;
+    }
+
+    .hero-container{
+        display: grid;
+        grid-template-columns: 560px 1fr;
+        align-items: center;
+        gap: 90px;
+    }
+
+    .content-manajement{
+        margin: 0;
+    }
+
+    .content-manajement h1{
+        position: static;
+        font-size: 64px;
+        line-height: 1.15;
+        margin-bottom: 24px;
+    }
+
+    .content-manajement p{
+        position: static;
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 470px;
+        margin-bottom: 40px;
+    }
+
+    .btn-twf2{
+        position: static;
+    }
+    .hero{
+        padding: 0;
+    }
+    .hero-image{
+        justify-content: center;
+    }
+
+    .hero-image img{
+        max-width: 685px;
+        width: 100%;
+        transform: none;
+    }
+    .card-free,
+    .card-personal,
+    .card-organization {
+        width: 100%;
+    }
+    .cards-container{
+        gap: 45px;
+    }
+    .card1,
+    .card2,
+    .card3{
+        width: 350px;
+    }
+    .footer-container{
+        max-width: 1320px;
+    }
+    .footer-bottom {
+        max-width: 1320px;
+    }
+}
+
+@media (max-width: 1152px){
+    .container{
+        max-width: 1088px;
+    }
+    .menu{
+        display: none;
+    }
+     .cards-container{
+         display: flex;
+        justify-content: center;
+        gap: 45px;
+        max-width: 1088px;
+        margin: 50px auto 0;
+    }
+    
+    .card-free,
+    .card-personal,
+    .card-organization {
+        width: 100%;
+    }
+
+    .content-you-work{
+        text-align: left;
+        margin-right: auto;
+      
+    }
+    .underline5{
+        right: 250px;
+        width: 300px;
+    }
+
+     .footer-container {
+        max-width: 1088px;
+    }
+
+    .footer-bottom {
+        max-width: 1088px;
+    }
+}
