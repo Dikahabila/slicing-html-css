@@ -82,7 +82,7 @@ nav{
     
 }
 .btn-twf2{
-    position: relative;
+    position: static;
     right: 40px;
     background-color: #4F9CF992;
     padding: 18.5px 44px 18.5px 24px;
