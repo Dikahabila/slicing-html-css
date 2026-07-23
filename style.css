@@ -23,6 +23,7 @@ body{
 nav{
     width: 100%;
     padding: 20px 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .navbar-container{
@@ -30,7 +31,9 @@ nav{
     justify-content:space-between;
     align-items:center;
 }
-
+.menu-humburger{
+    display: none;
+}
 .menu{
     margin-left: 0;
 }
@@ -69,7 +72,7 @@ nav{
 }
 .btn-twf1{
     background-color: #4F9CF992;
-    padding: 15px 25px;
+     padding: 18.5px 44px 18.5px 24px;
     border: none;
     border-radius: 5px;
     color: #ffffff;
@@ -79,10 +82,10 @@ nav{
     
 }
 .btn-twf2{
-    position: static;
+    position: relative;
     right: 40px;
     background-color: #4F9CF992;
-    padding: 15px 25px;
+    padding: 18.5px 44px 18.5px 24px;
     border: none;
     border-radius: 5px;
     color: #ffffff;
@@ -119,10 +122,10 @@ nav{
 }
 
 .hero{
-    background-image: url("gambar/Element.svg");
+    background-image: url("gambar/spectrum.png");
     background-repeat: no-repeat;
     background-position: center 120px;
-    background-size: cover;
+   
 }
 
 .hero-container{
@@ -132,7 +135,7 @@ nav{
     gap: 70px;
 }
 .content-manajement h1{
-    font-size: 64px;
+    font-size: 55px;
     line-height: 1.15;
     margin-bottom: 24px;
 }
@@ -153,6 +156,7 @@ nav{
 
 .manajement-container{
     display: flex;
+    padding-top: 20px;
     justify-content: space-between;
     align-items: center;
     gap: 70px;
@@ -487,6 +491,12 @@ nav{
     color: #ffffff;
 }
 
+.card-free i,
+.card-personal i,
+.card-organization i{
+    margin-right: 10px;
+}
+
 .card-organization{
     border: 1px solid #FFE492;
     padding: 20px;
@@ -575,7 +585,7 @@ nav{
 
 .your-data{
     background-color: #ffffff;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .your-container{
@@ -754,7 +764,8 @@ nav{
 
 .underline10{
     position: absolute;
-    left: 380px;
+    left: 370px;
+    transform: translateY(15px);
     bottom: 20px;
     width: 200px;
     height: auto;
@@ -1086,7 +1097,7 @@ nav{
 
     .content-manajement h1{
         position: static;
-        font-size: 64px;
+        font-size: 55px;
         line-height: 1.15;
         margin-bottom: 24px;
     }
