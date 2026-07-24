@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body{
     background-color: #043873;
     font-family: "Inter", sans-serif;
@@ -108,17 +112,15 @@ nav{
 }
 
 .hero-image{
-    flex: 1;
     display: flex;
     justify-content: flex-end;
 }
 
 .hero-image img{
-    width: 100%;
-    max-width: 520px;
-    border: 1px solid #FFFFFF;
+    width: auto;
+    max-width: 600px;
     height: auto;
-    transform: translateY(25px);
+    display: block;
 }
 
 .hero{
@@ -130,9 +132,9 @@ nav{
 
 .hero-container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr minmax(500px, 600px);
     align-items: center;
-    gap: 70px;
+    gap: 60px;
 }
 .content-manajement h1{
     font-size: 55px;
@@ -202,6 +204,7 @@ nav{
     left: 0;
     bottom: 5px;
     width: 500px;
+    max-width: 100%;
     transform: translateY(15px);
     z-index: -1;
 }
@@ -271,21 +274,21 @@ nav{
 
 .foto{
     flex: 1;
+    padding-left: 10px;
 }
 
 .foto img{
-    position: relative;
-    right: 50px;
     width: 100%;
     max-width: 550px;
     height: auto;
+    display: block;
 }
-
 .underline2{
     position: absolute;
     left: 130px;
     bottom: 5px;
    width: 300px;   
+    max-width: calc(100% - 130px);
     height: auto;   
     transform: translateY(6px);
     z-index: -1;
@@ -298,27 +301,32 @@ nav{
     padding-top: 30px;
     padding-bottom: 120px;
 }
-.kotak-kosong3 {
-    width: 450px;
-    height: 300px;
-    background-color: #C4DEFD;
-    margin-right: 70px;
-    transform: translateY(25px);
-    position: relative;
-    top: 30px;
-}
+
 
 .extension-container{
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 80px;
 }
+
 .content-extension{
-    width: 500px;
-    color: white;
-    margin-right: 90px;
-    transform: translateY(25px);
+    flex: 1;
+    max-width: 500px;
+    color: #FFFFFF;
+}
+
+.hero-image-extension{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 90px;
+}
+
+.hero-image-extension img{
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    display: block;
 }
 .content-extension h1{
     position: relative;
@@ -332,6 +340,7 @@ nav{
     left: 160px;
     bottom: 5px;
     width: 300px;   
+    max-width: calc(100% - 160px);
     height: auto;   
     transform: translateY(4px);
     z-index: -1;
@@ -393,6 +402,7 @@ nav{
     left: 2px;
     bottom: 5px;
    width: 400px;   
+    max-width: calc(100% - 2px);
     height: auto;   
     transform: translateY(6px);
     z-index: -1;
@@ -445,6 +455,7 @@ nav{
     right: 260px;
     bottom: 5px;
    width: 350px;   
+    max-width: calc(100% - 260px);
     height: auto;   
     transform: translateY(6px);
     z-index: -1;
@@ -453,6 +464,7 @@ nav{
 /* card */
 .card-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 85px;
@@ -463,7 +475,8 @@ nav{
 .card-free{
     border: 1px solid #FFE492;
     padding: 20px;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     border-radius: 10px;
 
     margin: 0;
@@ -472,7 +485,8 @@ nav{
     border: none;
     background-color: #043873;
     padding: 20px;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     height: 550px;
     border-radius: 10px;
 
@@ -500,7 +514,8 @@ nav{
 .card-organization{
     border: 1px solid #FFE492;
     padding: 20px;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     border-radius: 10px;
 
     margin: 0;
@@ -571,6 +586,7 @@ nav{
     left: 490px;
     bottom: 5px;
    width: 200px;   
+    max-width: calc(100% - 490px);
     height: auto;   
     transform: translateY(3px);
     z-index: -1;
@@ -603,7 +619,8 @@ nav{
 }
 
 .foto2 img{
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     height: auto;
 }
 
@@ -620,6 +637,7 @@ nav{
     left: 130px;
     bottom: 5px;
     width: 300px;
+    max-width: calc(100% - 130px);
     transform: translateY(5px);
     z-index: -1;
 }
@@ -667,6 +685,7 @@ nav{
     left: 100px;
     bottom: -8px;
     width: 280px;
+    max-width: calc(100% - 100px);
     height: auto;
     z-index: -1;
 }
@@ -697,11 +716,13 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    gap: 50px;
 }
+
 
 .content-favorite-apps {
     color: white;
+    flex: 1;
 }
 
 .content-favorite-apps h1 {
@@ -726,14 +747,15 @@ nav{
     
 }
 
-.foto img{
-     width: 500px;
-    height: auto;
-   margin-left: 50px;
-   
-
+.foto{
+    flex: 1.5;
 }
-
+.favorite-apps .foto img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+}
 .hero2{
     background-image: url(gambar/spectrum.png);
      background-repeat: no-repeat;
@@ -768,18 +790,21 @@ nav{
     transform: translateY(15px);
     bottom: 20px;
     width: 200px;
+    max-width: calc(100% - 370px);
     height: auto;
     z-index: -1;
 }
 
 .cards-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     margin-top: 50px;
 }
 .card1{
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
     padding: 30px;
     background: white;
     border-radius: 10px;
@@ -821,7 +846,8 @@ nav{
 }
 
 .card2{
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
     padding: 30px;
     background: #4F9CF9;
     border-radius: 10px;
@@ -866,7 +892,8 @@ nav{
 }
 
 .card3{
-    width: 320px;
+    max-width: 320px;
+    width: 100%;
     padding: 30px;
     background: #4F9CF9;
     border-radius: 10px;
@@ -992,10 +1019,10 @@ nav{
     max-width: 1150px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
-    
 }
 
 .menu-footer .container{
@@ -1005,17 +1032,20 @@ nav{
     gap: 60px;
 }
 .menu-whitepace{
-    width: 260px;
+    max-width: 260px;
+    width: 100%;
 }
 
 .product,
 .resources,
 .company{
-    width: 150px;
+    max-width: 150px;
+    width: 100%;
 }
 
 .try-it-today{
-    width: 280px;
+    max-width: 280px;
+    width: 100%;
 }
 
 .logo-footer{
@@ -1042,8 +1072,10 @@ nav{
     border-top: 1px solid rgba(255,255,255,.3);
 
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 .footer-left{
     display: flex;
@@ -1055,7 +1087,7 @@ nav{
 .footer-center{
     display: flex;
     gap: 35px;
-    margin-right: 200px;
+    margin-right: 20px;
 }
 
 .footer-center p{
@@ -1073,7 +1105,6 @@ nav{
     height: 20px;
     object-fit: contain;
 }
-
 
 /* Desktop 1440px */
 @media screen and (max-width: 1440px) {
@@ -1108,6 +1139,17 @@ nav{
         line-height: 30px;
         max-width: 470px;
         margin-bottom: 40px;
+    }
+
+    .content-project h1,
+    .content-manajement h1,
+    .content-work-together h1,
+    .content-extension h1,
+    .content-customise h1,
+    .content-your-data h1,
+    .content-footer h1,
+    .content-you-work h1 {
+        font-size: 48px;
     }
 
     .btn-twf2{
@@ -1153,19 +1195,50 @@ nav{
     .menu{
         display: none;
     }
-     .cards-container{
-         display: flex;
+
+    .card-container{
+        display: flex;
         justify-content: center;
-        gap: 45px;
-        max-width: 1088px;
-        margin: 50px auto 0;
+        align-items: stretch;
+        gap: 30px;
+        flex-wrap: nowrap;
     }
-    
+
     .card-free,
     .card-personal,
-    .card-organization {
-        width: 100%;
+    .card-organization{
+        width: 300px;
+        flex-shrink: 1;
     }
+
+ .content-project h1,
+    .content-manajement h1,
+    .content-work-together h1,
+    .content-extension h1,
+    .content-customise h1,
+    .content-your-data h1,
+    .content-footer h1,
+    .content-favorite-apps h1,
+    .content-sponsor h1,
+    .content-choose h1,
+    .content-you-work h1 {
+        font-size: 38px;
+    }
+     .content-manajement p,
+    .content-project p,
+    .content-work-together p,
+    .content-extension p,
+    .content-customise p,
+    .content-data p,
+    .content-work p,
+    .content-content p,
+    .content-favorite-apps p,
+    .content-sponsor p,
+    .content-choose p {
+        font-size: 14px;
+    }
+
+
 
     .content-you-work{
         text-align: left;
