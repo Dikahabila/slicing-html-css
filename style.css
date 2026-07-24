@@ -210,15 +210,15 @@ nav{
 }
 .content-project p{
    position: relative;
-   top: 30px;
+   top: 24px;
    margin: 0;
     color: rgb(0, 0, 0);
 }
 .btn-get{
     background-color: #4F9CF9;
     position: relative;
-    top: 30px;
-    padding: 15px 25px;
+    top: 60px;
+    padding: 20px 40px;
     border: none;
     border-radius: 5px;
     color: #ffffff;
@@ -262,11 +262,12 @@ nav{
 }
 .btn-try-it-now{
     background-color: #4F9CF9;
-    padding: 15px 25px;
+    padding: 20px 40px;
     border: none;
     border-radius: 5px;
     color: #ffffff;
     font-size: 14px;
+    top: 60px;
     cursor: pointer;
     font-family: "Inter", sans-serif; 
     
@@ -350,9 +351,10 @@ nav{
     position: relative;
     right: -5px;
     background-color: #4F9CF992;
-    padding: 15px 25px;
+    padding: 20px 40px;
     border: none;
     border-radius: 5px;
+    top: 60px;
     color: #ffffff;
     font-size: 14px;
     cursor: pointer;
@@ -377,6 +379,7 @@ nav{
 
 .heroo-image{
     flex: 1;
+    padding-top: 90px;
 }
 
 .heroo-image img{
@@ -396,6 +399,7 @@ nav{
     font-size: 45px;
     color: rgb(0, 0, 0);
     z-index: 1;
+    margin-bottom: 5px;
 }
 .underline4{
     position: absolute;
@@ -409,8 +413,10 @@ nav{
 }
 
 .btn-customise{
+    position: relative;
+    top: 40px;
     background-color: #4F9CF9;
-    padding: 15px 25px;
+    padding: 20px 40px;
     border: none;
     border-radius: 5px;
     color: #ffffff;
@@ -464,7 +470,7 @@ nav{
 /* card */
 .card-container{
     display: flex;
-    flex-wrap: wrap;
+  
     justify-content: center;
     align-items: center;
     gap: 85px;
@@ -475,7 +481,7 @@ nav{
 .card-free{
     border: 1px solid #FFE492;
     padding: 20px;
-    max-width: 300px;
+    max-width: 380px;
     width: 100%;
     border-radius: 10px;
 
@@ -485,7 +491,7 @@ nav{
     border: none;
     background-color: #043873;
     padding: 20px;
-    max-width: 300px;
+    max-width: 360px;
     width: 100%;
     height: 550px;
     border-radius: 10px;
@@ -500,9 +506,16 @@ nav{
 }
 .card-personal h3{
     color: #ffffff;
+    font-weight: 300;
+    font-size: 18px;
 }
 .card-personal p{
     color: #ffffff;
+}
+.card-free h3,
+.card-organization h3{
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .card-free i,
@@ -514,7 +527,7 @@ nav{
 .card-organization{
     border: 1px solid #FFE492;
     padding: 20px;
-    max-width: 300px;
+    max-width: 380px;
     width: 100%;
     border-radius: 10px;
 
@@ -526,15 +539,13 @@ nav{
 
 .btn-card-free{
     border: 1px solid #FFE492;
-    padding: 10px;
-    width: 120px;
+    padding: 16px 40px;
     background-color: #ffffff;
     border-radius: 5px;
 }
 .btn-card-personal{
     border: none;
-    padding: 10px;
-    width: 120px;
+     padding: 16px 40px;
     background-color: #4F9CF9;
     color: #ffffff;
     border-radius: 5px;
@@ -630,6 +641,7 @@ nav{
     font-size: 45px;
     color: black;
     z-index: 1;
+    margin-bottom: 5px;
 }
 
 .underline7{
@@ -646,10 +658,12 @@ nav{
     color: rgb(0, 0, 0);
 }
 .btn-read-more{
+    position: relative;
     background-color: #4F9CF9;
-    padding: 15px 25px;
+    padding: 20px 40px;
     border: none;
     border-radius: 5px;
+    top: 40px;
     color: #ffffff;
     font-size: 14px;
     cursor: pointer;
@@ -737,7 +751,7 @@ nav{
 }
 .btn-read-more2{
     background-color: #4F9CF9;
-    padding: 15px 25px;
+    padding: 20px 40px;
     border: none;
     border-radius: 5px;
     color: #ffffff;
